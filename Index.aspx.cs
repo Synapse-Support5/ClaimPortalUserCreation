@@ -36,8 +36,8 @@ namespace ClaimPortalUserCreation
         {
             try
             {
-                Session["name"] = "G116036";
-                //Session["name"] = Request.ServerVariables["REMOTE_USER"].Substring(6);
+                //Session["name"] = "G116036";
+                Session["name"] = Request.ServerVariables["REMOTE_USER"].Substring(6);
 
                 if (Session["name"].ToString() != "")
                 {
